@@ -1,0 +1,137 @@
+/* General Styles */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333333; /* Dark Gray Text */
+  background-color: #F5F5F5; /* Light Gray Background */
+}
+
+.App-header {
+  background-color: #47e6ff; /* Tomato */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px;
+  color: white;
+}
+
+/* Form Styling */
+.kudos-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.kudos-form input, .kudos-form textarea {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.kudos-form button {
+  padding: 12px 20px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.kudos-form button:hover {
+  background-color: #45a049; /* Darker Green on Hover */
+}
+
+/* Dashboard Styling */
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.inline-sections {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.chart-section, .leaderboard-section {
+  background-color: #FFFFFF; /* White */
+  border-radius: 8px;
+  padding: 20px;
+  width: 48%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  align-self: left;
+}
+
+.chart-section h2, .leaderboard-section h2 {
+  color: #46a410; /* Deep Orange */
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  height: 300px;
+  width: 100%;
+}
+
+/* Leaderboard Table Styling */
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.leaderboard-table th, .leaderboard-table td {
+  padding: 14px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 16px;
+}
+
+.leaderboard-table th {
+  background-color: #FF6347; /* Tomato */
+  color: white;
+  font-weight: bold;
+}
+
+.leaderboard-table td {
+  background-color: #f9f9f9; /* Light Gray for rows */
+  color: #333333;
+}
+
+.leaderboard-table tr:nth-child(even) {
+  background-color: #f1f1f1; /* Light Gray for even rows */
+}
+
+.leaderboard-table tr:hover {
+  background-color: #ffe0b3; /* Soft Yellow on hover */
+}
+
+.leaderboard-table th, .leaderboard-table td {
+  border-color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .inline-sections {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chart-section, .leaderboard-section {
+    width: 100%;
+  }
+}
