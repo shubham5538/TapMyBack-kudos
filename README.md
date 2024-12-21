@@ -46,6 +46,11 @@ Clone the project repository to your local machine:
 ```bash
 git clone https://github.com/shubham5538/TapMyBack-kudos.git
 cd TapMyBack-kudos
-
-
 add .env file as well 
+
+
+Screen shots 
+
+![image](https://github.com/user-attachments/assets/6d27f4f1-bf46-4a11-8e37-2edebb4454c4)
+![image](https://github.com/user-attachments/assets/747b2a63-b1d6-4fd4-a108-e24844025e34)
+
